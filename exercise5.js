@@ -5,41 +5,41 @@ var Calculator = /** @class */ (function () {
     }
     // Addition method
     Calculator.prototype.add = function (a, b) {
-        if (typeof a !== 'number' || isNaN(a)) {
-            return "this is not a valid number.";
+        if (typeof a !== "number" || isNaN(a)) {
+            return "Oops!!this is not a valid number.";
         }
-        if (typeof b !== 'number' || isNaN(b)) {
-            return "Invalid input: The second input must be a valid number.";
+        if (typeof b !== "number" || isNaN(b)) {
+            return "Uh oh!! The second input must be a valid number.";
         }
         return a + b;
     };
     // Subtraction method
     Calculator.prototype.subtract = function (a, b) {
-        if (typeof a !== 'number' || isNaN(a)) {
-            return "Invalid input: The first input must be a valid number.";
+        if (typeof a !== "number" || isNaN(a)) {
+            return "Oops!!this is not a valid number.";
         }
-        if (typeof b !== 'number' || isNaN(b)) {
-            return "Invalid input: The second input must be a valid number.";
+        if (typeof b !== "number" || isNaN(b)) {
+            return "Uh oh!! The second input must be a valid number.";
         }
         return a - b;
     };
     // Multiplication method
     Calculator.prototype.multiply = function (a, b) {
-        if (typeof a !== 'number' || isNaN(a)) {
-            return "Invalid input: The first input must be a valid number.";
+        if (typeof a !== "number" || isNaN(a)) {
+            return "Oops!!this is not a valid number.";
         }
-        if (typeof b !== 'number' || isNaN(b)) {
-            return "Invalid input: The second input must be a valid number.";
+        if (typeof b !== "number" || isNaN(b)) {
+            return "Uh oh!! The second input must be a valid number.";
         }
         return a * b;
     };
     // Division method
     Calculator.prototype.divide = function (a, b) {
-        if (typeof a !== 'number' || isNaN(a)) {
-            return "Invalid input: The first input must be a valid number.";
+        if (typeof a !== "number" || isNaN(a)) {
+            return "Oops!!this is not a valid number.";
         }
-        if (typeof b !== 'number' || isNaN(b)) {
-            return "Invalid input: The second input must be a valid number.";
+        if (typeof b !== "number" || isNaN(b)) {
+            return "Uh oh!! The second input must be a valid number.";
         }
         if (b === 0) {
             return "division by 0 is not allowed";
