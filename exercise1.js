@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var name = "Siphelele";
+console.log(name);
+var num = 17;
+console.log(num);
+var value;
+value = "Siphelele";
+value = 24;
+var stringOrNum;
+stringOrNum = "Hello";
+stringOrNum = 42;
