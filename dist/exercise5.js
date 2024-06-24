@@ -1,10 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Calculator = /** @class */ (function () {
-    function Calculator() {
-    }
-    // Addition method
-    Calculator.prototype.add = function (a, b) {
+class Calculator {
+    add(a, b) {
         if (typeof a !== "number" || isNaN(a)) {
             return "Oops!!this is not a valid number.";
         }
@@ -12,9 +9,8 @@ var Calculator = /** @class */ (function () {
             return "Uh oh!! The second input must be a valid number.";
         }
         return a + b;
-    };
-    // Subtraction method
-    Calculator.prototype.subtract = function (a, b) {
+    }
+    subtract(a, b) {
         if (typeof a !== "number" || isNaN(a)) {
             return "Oops!!this is not a valid number.";
         }
@@ -22,9 +18,8 @@ var Calculator = /** @class */ (function () {
             return "Uh oh!! The second input must be a valid number.";
         }
         return a - b;
-    };
-    // Multiplication method
-    Calculator.prototype.multiply = function (a, b) {
+    }
+    multiply(a, b) {
         if (typeof a !== "number" || isNaN(a)) {
             return "Oops!!this is not a valid number.";
         }
@@ -32,9 +27,8 @@ var Calculator = /** @class */ (function () {
             return "Uh oh!! The second input must be a valid number.";
         }
         return a * b;
-    };
-    // Division method
-    Calculator.prototype.divide = function (a, b) {
+    }
+    divide(a, b) {
         if (typeof a !== "number" || isNaN(a)) {
             return "Oops!!this is not a valid number.";
         }
@@ -45,10 +39,9 @@ var Calculator = /** @class */ (function () {
             return "division by 0 is not allowed";
         }
         return a / b;
-    };
-    return Calculator;
-}());
-var calculator = new Calculator();
+    }
+}
+const calculator = new Calculator();
 console.log(calculator.add(5, 3));
 console.log(calculator.subtract(7, 3));
 console.log(calculator.multiply(5, 3));
